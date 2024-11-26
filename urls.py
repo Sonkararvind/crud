@@ -28,4 +28,7 @@ from crud_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.INDEX, name="home"), 
+    path('add', views.ADD, name='add'),
 ]
+# def ADD(request):
+#     return render(add.html)
